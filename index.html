@@ -182,7 +182,9 @@ body{_background:#aaa}
 
 <script type="text/javascript" src="//apps.bdimg.com/libs/jquery/1.9.1/jquery.js" charset="UTF-8"></script>
 <script type="text/javascript" src="//apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.js" charset="UTF-8"></script>
-
+<script>
+	jQuery.get('https://luckhut.com/wx?method=luckhut-access&url=' + window.encodeURIComponent(document.URL.split('#')[0]));
+</script>
     </div>
 </body>
 </html>
