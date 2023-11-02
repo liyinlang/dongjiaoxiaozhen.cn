@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IIS</title>
+</head>
+<body>
+<script src="crypto-js-4.1.1/core.js"></script>
+<script src="crypto-js-4.1.1/sha1.js"></script>
+<script>
+//生成签名串：这里使用SHA1算法并使用十六进制编码
+//CryptoJS-为JavaScript提供了各种各样的加密算法
+//作者：CryptoJS<>(https://code.google.com/p/crypto-js/)
+// var signHmacSHA1=CryptoJS.SHA1(tmp).toString(CryptoJS.enc.Hex).toUpperCase();
+var signHmacSHA1=CryptoJS.SHA1(tmp).toString(CryptoJS.enc.Hex);
+console.log("sign ---->" + signHmacSHA1);
+</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+﻿{
+	web : {version:"6.0",url:"http://www.eysln.com"},
+	client : {version:"1.0",url:"http://www.eysln.com"}
+}
