@@ -76,6 +76,7 @@
 					<li class="list-group-item"><a href="http://liliang.org.cn/" rel="noopener noreferrer" target="_blank">liliang.org.cn</a></li>
 					<li class="list-group-item"><a href="http://ziqizhongshan.com/" rel="noopener noreferrer" target="_blank">ziqizhongshan.com</a></li>
 					<li class="list-group-item"><a href="http://dongjiaoxiaozhen.cn/" rel="noopener noreferrer" target="_blank">dongjiaoxiaozhen.cn</a></li>
+					<li class="list-group-item"><a href="http://xuzhuang.work/" rel="noopener noreferrer" target="_blank">xuzhuang.work</a></li>
 					<li class="list-group-item"><a href="http://dev.byjcf.com/" rel="noopener noreferrer" target="_blank">dev.byjcf.com</a></li>
 					<li class="list-group-item"><a href="http://lipinka.work/" rel="noopener noreferrer" target="_blank"> lipinka.work</a></li>
 					<li class="list-group-item"><a href="http://dazhaxie.work/" rel="noopener noreferrer" target="_blank">dazhaxie.work</a></li>
