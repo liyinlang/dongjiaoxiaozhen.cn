@@ -1,0 +1,2 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" ContentType="text/plain" %>
+今天是<%=DateTime.Now.ToString("yyyy年MM月dd日")%>，是紫气钟山小区配套南门等待恢复的第<b><%=(DateTime.Now.Date - new DateTime(2022,1,18)).TotalDays%></b>天，也是群众合理诉求被无视的第<b><%=(DateTime.Now.Date - new DateTime(2022,1,18)).TotalDays%></b>天，更是相关部门不作为的第<b><%=(DateTime.Now.Date - new DateTime(2022,1,18)).TotalDays%></b>天。

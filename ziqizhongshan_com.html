@@ -18,14 +18,18 @@
     <link href="Content/Hui-iconfont/iconfont.css" rel="stylesheet" />
     <link href="Content/aliyun-font/alifont.css" rel="stylesheet" />
     <link href="Content/iconic/css/material-design-iconic-font.css" rel="stylesheet" />
+	<script type="text/javascript" src="/Content/watermark.js"></script>
 	<style>
 		small{color:#f00 !important;font-size: 16px !important;font-weight: bold !important;}
 		.image-preview-2023{max-width: 100%;margin:0 !important;min-height:100px;}
 		body{padding-top:0;background:#fff;}
+		#_api_Timer{text-align:center;font-size:25px;background:yellow}
+		#_api_Timer b{font-weight:bold;color:red;}
 	</style>
 	<!-- https://www.17sucai.com/pins/demo-show?id=8925&st=kI9u1gwx2KvdbtWGfVbeJA&e=1691241422 --->
 </head>
 <body>
+	<div id="_api_Timer"></div>
     <div class="container">
 	
 <div class="row">
@@ -953,13 +957,14 @@
     <div class="container">
 	
 <div class="row">
-	<div class="col-xs-12">
+	<div class="col-xs-12" id="links">
 		友情链接：<a href="http://ziqizhongshan.com/" target="_blank">紫气钟山苑</a>
 		<a href="http://xuzhuang.work/" target="_blank">徐庄社区</a>
 		<a href="https://www.gov.cn/" target="_blank">中国政府网</a>
 		<a href="https://www.jiangsu.gov.cn/" target="_blank">江苏省人民政府</a>
 		<a href="https://www.nanjing.gov.cn/index.html" target="_blank">南京市人民政府</a>
 		<a href="http://www.xwzf.gov.cn/" target="_blank">玄武区人民政府</a>
+		<a href="http://zhengwu.online" target="_blank" title="ZHENGWU" description="ZHENGWU">ZHENGWU Online</a>
 	</div>
 </div>
 
@@ -971,6 +976,15 @@
 	});
   
 	jQuery.get('https://luckhut.com/wx?method=luckhut-access&url=' + window.encodeURIComponent(document.URL.split('#')[0]));
+	jQuery.post('/_api_Timer.aspx',function(html){
+		$('#_api_Timer').html(html);
+		watermark({watermark_txt:$('#_api_Timer').text()});
+		
+		jQuery('#links a').each(function(){
+			$(this).attr('href',$(this).attr('href') + '?referer=' + document.URL + '&key=' + $('#_api_Timer').text())
+		})
+		
+	})
     </script>
 </body>
 <html>
